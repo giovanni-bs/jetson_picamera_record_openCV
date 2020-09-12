@@ -1,0 +1,5 @@
+wget -qO- https://getpm2.com/install.sh | bash #install pm2 without npm
+pm2 start /home/user/script.py --interpreter=python #start python script. Use --no-autorestart to avoid automatic script restart in case of error.
+pm2 save #save the process
+pm2 startup #set the configuration for system boot auto start
+#Copy and paste the sudo env PATH command displayed in terminal.
